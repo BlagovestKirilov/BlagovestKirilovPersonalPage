@@ -440,6 +440,8 @@ img { display: block; max-width: 100%; }
 .project-card__link:hover { color: var(--accent); }
 
 .project-card__name { font-size: 1.1rem; font-weight: 600; margin-bottom: 10px; }
+.project-card__name a, .project-featured__name a { color: inherit; }
+.project-card__name a:hover, .project-featured__name a:hover { color: var(--accent); }
 
 .project-card__desc {
     color: var(--text-muted); font-size: 0.88rem; line-height: 1.65;
