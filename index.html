@@ -41,8 +41,8 @@
             <p class="hero__role">Java Developer</p>
             <p class="hero__bio">
                 3+ years building backend systems with Spring Boot, PostgreSQL, and Oracle SQL.
-                I design scalable REST APIs, real-time WebSocket apps, and cloud-deployed services with Docker and CI/CD.
-                Outside work, I ship personal projects — from a live multiplayer card game to a TV streaming platform.
+                I design scalable REST APIs, real-time WebSocket apps, and cloud-deployed services with Docker and CI/CD, and build React frontends on top of them.
+                Outside work, I ship personal projects — from a live multiplayer games platform to a TV streaming platform.
             </p>
             <div class="hero__actions">
                 <a href="mailto:blagovestkirilov1@gmail.com" class="btn btn--ghost">
@@ -61,7 +61,7 @@
         </div>
         <div class="hero__portrait reveal reveal--delay-1">
             <div class="hero__portrait-ring"></div>
-            <img src="picture.png" alt="Blagovest Kirilov" width="280" height="280">
+            <img src="portrait.jpg" alt="Blagovest Kirilov" width="280" height="280">
         </div>
     </div>
 </header>
@@ -75,7 +75,7 @@
         </div>
         <div class="about reveal">
             <p class="about__text">
-                I'm a Java developer passionate about building reliable, well-structured backend systems. My professional work spans banking software, insurance platforms, and enterprise integrations. On my own time, I build and deploy real products — a live multiplayer card game at <a href="https://deck.bg" target="_blank" rel="noopener noreferrer">deck.bg</a>, a menu-generation SaaS (MenuCraft), and more. I care about clean code, practical architecture, and shipping things that work.
+                I'm a Java developer passionate about building reliable, well-structured backend systems. My professional work spans banking software, insurance platforms, and enterprise integrations. On my own time, I build and deploy real products — a live multiplayer platform for Bulgarian card and board games at <a href="https://deck.bg" target="_blank" rel="noopener noreferrer">deck.bg</a>, a menu-generation SaaS (MenuCraft), and more. I care about clean code, practical architecture, and shipping things that work.
             </p>
         </div>
     </div>
@@ -304,13 +304,15 @@
         <div class="project-featured reveal">
             <div class="project-featured__content">
                 <span class="project-featured__label">Featured Project</span>
-                <h3 class="project-featured__name"><a href="https://github.com/BlagovestKirilov/santase-service" target="_blank" rel="noopener noreferrer">SantaseService</a></h3>
+                <h3 class="project-featured__name"><a href="https://deck.bg" target="_blank" rel="noopener noreferrer">deck.bg</a></h3>
                 <p class="project-featured__desc">
-                    <a href="https://deck.bg" target="_blank" rel="noopener noreferrer">deck.bg</a> — a real-time online multiplayer platform for Santase (Sixty-Six), the popular Bulgarian card game. Features WebSocket gameplay, Elo ranking, matchmaking, and full CI/CD to AWS.
+                    A real-time online multiplayer platform for traditional Bulgarian games — Santase (Sixty-Six), the popular card game, and Tabla, Bulgarian backgammon. A Spring Boot backend runs the games over WebSocket, with Elo ranking and matchmaking; a React and TypeScript frontend is the table players sit at. Full CI/CD to AWS for both.
                 </p>
                 <div class="tags">
                     <span class="tag">Java 25</span>
                     <span class="tag">Spring Boot 4</span>
+                    <span class="tag">React</span>
+                    <span class="tag">TypeScript</span>
                     <span class="tag">WebSocket</span>
                     <span class="tag">PostgreSQL</span>
                     <span class="tag">Docker</span>
@@ -321,9 +323,13 @@
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                         Live Site
                     </a>
-                    <a href="https://github.com/BlagovestKirilov/santase-service" target="_blank" rel="noopener noreferrer" class="btn btn--small btn--ghost">
+                    <a href="https://github.com/BlagovestKirilov/deck.bg-backend" target="_blank" rel="noopener noreferrer" class="btn btn--small btn--ghost">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                        Source
+                        Backend
+                    </a>
+                    <a href="https://github.com/BlagovestKirilov/deck.bg-frontend" target="_blank" rel="noopener noreferrer" class="btn btn--small btn--ghost">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        Frontend
                     </a>
                 </div>
             </div>
