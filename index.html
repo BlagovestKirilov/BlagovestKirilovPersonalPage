@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blagovest Kirilov — Java Developer</title>
     <meta name="description" content="Java Developer with 3+ years building backend systems with Spring Boot, PostgreSQL, and Oracle SQL. Based in Sofia, Bulgaria.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,12 @@
 
 <nav class="nav" aria-label="Main navigation">
     <div class="nav__inner">
-        <a href="#hero" class="nav__logo" aria-label="Home">BK</a>
+        <a href="#hero" class="nav__logo" aria-label="Back to top">
+            <svg class="nav__logo-bolt" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                <defs><linearGradient id="boltGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+                <path d="M13.5 2.5 L5 14 H11.5 L10.5 21.5 L19 9.5 H12.5 Z"/>
+            </svg>
+        </a>
         <ul class="nav__links" id="navLinks">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -42,8 +48,9 @@
             <p class="hero__bio">
                 I build software that leaves the whiteboard and goes live.
                 For 3+ years that has meant backend systems with Spring Boot, PostgreSQL, and Oracle SQL: scalable REST APIs,
-                real-time WebSocket apps, and cloud-deployed services with Docker and CI/CD. I ship them end to end —
-                from a live multiplayer games platform with a React frontend to a TV streaming platform.
+                real-time WebSocket apps, and cloud-deployed services with Docker and CI/CD. I ship them end to end:
+                a live multiplayer games platform with a React frontend, and live TV streaming, including a
+                Node.js Stremio addon that over 1,000 people have installed.
             </p>
             <div class="hero__actions">
                 <a href="mailto:blagovestkirilov1@gmail.com" class="btn btn--ghost">
@@ -76,7 +83,7 @@
         </div>
         <div class="about reveal">
             <p class="about__text">
-                I'm a Java developer passionate about building reliable, well-structured backend systems. My professional work spans banking software and enterprise integrations. On my own time, I build and deploy real products — a live multiplayer platform for Bulgarian card and board games at <a href="https://deck.bg" target="_blank" rel="noopener noreferrer">deck.bg</a>, a menu-generation SaaS (MenuCraft), and more. I care about clean code, practical architecture, and shipping things that work.
+                I'm a Java developer passionate about building reliable, well-structured backend systems. My professional work spans banking software and enterprise integrations. On my own time, I build and deploy real products — a live multiplayer platform for Bulgarian card and board games at <a href="https://deck.bg" target="_blank" rel="noopener noreferrer">deck.bg</a>, a live TV addon for Stremio (<a href="https://streamvault.fly.dev/configure" target="_blank" rel="noopener noreferrer">StreamVault</a>), a menu-generation SaaS (MenuCraft), and more. I care about clean code, practical architecture, and shipping things that work.
             </p>
         </div>
     </div>
@@ -333,6 +340,41 @@
                     <a href="https://github.com/BlagovestKirilov/deck.bg-frontend" target="_blank" rel="noopener noreferrer" class="btn btn--small btn--ghost">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
                         Frontend
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-featured reveal">
+            <div class="project-featured__content">
+                <span class="project-featured__label">Stremio Addon</span>
+                <h3 class="project-featured__name"><a href="https://streamvault.fly.dev/configure" target="_blank" rel="noopener noreferrer">StreamVault IPTV</a></h3>
+                <p class="project-featured__desc">
+                    A Stremio addon that brings live TV into Stremio from an Xtream Codes account or an M3U playlist — with a TV guide (EPG), channel search, and category filters. Large playlists are streamed and parsed instead of loaded whole. Runs in Docker on Fly.io, deployed by GitHub Actions.
+                </p>
+                <dl class="project-stats">
+                    <div><dt>Installs</dt><dd>1K+</dd></div>
+                    <div><dt>Streams played</dt><dd>14K+</dd></div>
+                    <div><dt>Channel searches</dt><dd>20K+</dd></div>
+                    <div><dt>Live since</dt><dd>May 2026</dd></div>
+                </dl>
+                <div class="tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Stremio</span>
+                    <span class="tag">Xtream Codes</span>
+                    <span class="tag">M3U</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Fly.io</span>
+                    <span class="tag">GitHub Actions</span>
+                </div>
+                <div class="project-featured__links">
+                    <a href="https://streamvault.fly.dev/configure" target="_blank" rel="noopener noreferrer" class="btn btn--small btn--primary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        Install
+                    </a>
+                    <a href="https://github.com/BlagovestKirilov/StreamVault" target="_blank" rel="noopener noreferrer" class="btn btn--small btn--ghost">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
                     </a>
                 </div>
             </div>

@@ -80,12 +80,18 @@ img { display: block; max-width: 100%; }
 }
 
 .nav__logo {
-    font-size: 1.15rem; font-weight: 800; letter-spacing: -0.5px;
-    background: linear-gradient(135deg, var(--accent), var(--violet));
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text;
+    display: inline-grid; place-items: center;
+    width: 44px; height: 44px; margin-left: -8px;
 }
-.nav__logo:hover { opacity: 0.8; }
+
+/* The bolt alone is the mark: real-time systems and shipping fast, in the
+   page's own blue-to-violet, the same pair as the nav underline and the
+   featured project's top edge. */
+.nav__logo-bolt {
+    fill: url(#boltGrad); stroke: url(#boltGrad); stroke-width: 1.5; stroke-linejoin: round;
+    transition: transform var(--duration) var(--ease);
+}
+.nav__logo:hover .nav__logo-bolt { transform: rotate(-12deg) scale(1.1); }
 
 .nav__links {
     display: flex; list-style: none; gap: 32px;
@@ -408,6 +414,19 @@ img { display: block; max-width: 100%; }
     display: flex; gap: 12px; margin-top: 20px;
 }
 
+/* Real usage numbers for a live project: the figure first, what it counts beneath. */
+.project-stats {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px;
+    margin: 20px 0 4px; padding: 16px 0;
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+}
+.project-stats div { display: flex; flex-direction: column-reverse; gap: 2px; }
+.project-stats dd {
+    font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; color: var(--text);
+    font-variant-numeric: tabular-nums;
+}
+.project-stats dt { font-size: 0.82rem; color: var(--text-muted); }
+
 .projects-grid {
     display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
 }
@@ -558,4 +577,5 @@ img { display: block; max-width: 100%; }
     .contact-grid { grid-template-columns: 1fr; }
 
     .project-featured__links { flex-direction: column; }
+    .project-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
